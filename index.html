@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preload" href=".woff2" as="font" />
+    <link rel="preload" href=".woff2" as="font" />
+
+    <title>Amore - клубника в шоколаде</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__socials">
+            <a
+              href="https://www.instagram.com/amore_almty/"
+              class="social__link"
+              target="_blank"
+            >
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="25"
+                  height="25"
+                  rx="3.71875"
+                  fill="url(#paint0_linear_292_2356-667389)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.95703 3.95781C9.87344 3.91562 10.1656 3.90625 12.5 3.90625C14.8344 3.90625 15.1266 3.91641 16.0422 3.95781C16.9578 3.99922 17.5828 4.14531 18.1297 4.35703C18.7023 4.57344 19.2219 4.91172 19.6516 5.34922C20.0891 5.77812 20.4266 6.29688 20.6422 6.87031C20.8547 7.41719 21 8.04219 21.0422 8.95625C21.0844 9.87422 21.0938 10.1664 21.0938 12.5C21.0938 14.8344 21.0836 15.1266 21.0422 16.043C21.0008 16.957 20.8547 17.582 20.6422 18.1289C20.4266 18.7024 20.0885 19.222 19.6516 19.6516C19.2219 20.0891 18.7023 20.4266 18.1297 20.6422C17.5828 20.8547 16.9578 21 16.0437 21.0422C15.1266 21.0844 14.8344 21.0938 12.5 21.0938C10.1656 21.0938 9.87344 21.0836 8.95703 21.0422C8.04297 21.0008 7.41797 20.8547 6.87109 20.6422C6.29759 20.4265 5.77798 20.0885 5.34844 19.6516C4.91123 19.2224 4.5729 18.703 4.35703 18.1297C4.14531 17.5828 4 16.9578 3.95781 16.0437C3.91562 15.1258 3.90625 14.8336 3.90625 12.5C3.90625 10.1656 3.91641 9.87344 3.95781 8.95781C3.99922 8.04219 4.14531 7.41719 4.35703 6.87031C4.57322 6.29694 4.91181 5.77759 5.34922 5.34844C5.77816 4.91133 6.29724 4.573 6.87031 4.35703C7.41719 4.14531 8.04219 4 8.95625 3.95781H8.95703ZM15.9727 5.50469C15.0664 5.46328 14.7945 5.45469 12.5 5.45469C10.2055 5.45469 9.93359 5.46328 9.02734 5.50469C8.18906 5.54297 7.73438 5.68281 7.43125 5.80078C7.03047 5.95703 6.74375 6.14219 6.44297 6.44297C6.15785 6.72035 5.93842 7.05803 5.80078 7.43125C5.68281 7.73438 5.54297 8.18906 5.50469 9.02734C5.46328 9.93359 5.45469 10.2055 5.45469 12.5C5.45469 14.7945 5.46328 15.0664 5.50469 15.9727C5.54297 16.8109 5.68281 17.2656 5.80078 17.5688C5.93828 17.9414 6.15781 18.2797 6.44297 18.557C6.72031 18.8422 7.05859 19.0617 7.43125 19.1992C7.73438 19.3172 8.18906 19.457 9.02734 19.4953C9.93359 19.5367 10.2047 19.5453 12.5 19.5453C14.7953 19.5453 15.0664 19.5367 15.9727 19.4953C16.8109 19.457 17.2656 19.3172 17.5688 19.1992C17.9695 19.043 18.2563 18.8578 18.557 18.557C18.8422 18.2797 19.0617 17.9414 19.1992 17.5688C19.3172 17.2656 19.457 16.8109 19.4953 15.9727C19.5367 15.0664 19.5453 14.7945 19.5453 12.5C19.5453 10.2055 19.5367 9.93359 19.4953 9.02734C19.457 8.18906 19.3172 7.73438 19.1992 7.43125C19.043 7.03047 18.8578 6.74375 18.557 6.44297C18.2796 6.15787 17.942 5.93845 17.5688 5.80078C17.2656 5.68281 16.8109 5.54297 15.9727 5.50469V5.50469ZM11.4023 15.1492C12.0154 15.4044 12.698 15.4388 13.3335 15.2467C13.9691 15.0545 14.5183 14.6476 14.8872 14.0955C15.2561 13.5434 15.4219 12.8804 15.3563 12.2196C15.2907 11.5589 14.9977 10.9414 14.5273 10.4727C14.2275 10.173 13.865 9.9436 13.4659 9.8009C13.0668 9.65819 12.641 9.60575 12.2191 9.64736C11.7973 9.68896 11.39 9.82358 11.0264 10.0415C10.6629 10.2594 10.3521 10.5553 10.1166 10.9077C9.88114 11.2601 9.72671 11.6604 9.66447 12.0797C9.60222 12.4989 9.63371 12.9268 9.75667 13.3324C9.87963 13.7381 10.091 14.1114 10.3756 14.4256C10.6601 14.7397 11.0108 14.9869 11.4023 15.1492ZM9.37656 9.37656C9.78674 8.96639 10.2737 8.64102 10.8096 8.41903C11.3455 8.19705 11.9199 8.08279 12.5 8.08279C13.0801 8.08279 13.6545 8.19705 14.1904 8.41903C14.7263 8.64102 15.2133 8.96639 15.6234 9.37656C16.0336 9.78674 16.359 10.2737 16.581 10.8096C16.803 11.3455 16.9172 11.9199 16.9172 12.5C16.9172 13.0801 16.803 13.6545 16.581 14.1904C16.359 14.7263 16.0336 15.2133 15.6234 15.6234C14.7951 16.4518 13.6715 16.9172 12.5 16.9172C11.3285 16.9172 10.2049 16.4518 9.37656 15.6234C8.54818 14.7951 8.08279 13.6715 8.08279 12.5C8.08279 11.3285 8.54818 10.2049 9.37656 9.37656V9.37656ZM17.8969 8.74063C17.9985 8.64474 18.0799 8.52944 18.1362 8.40154C18.1925 8.27365 18.2225 8.13576 18.2245 7.99604C18.2266 7.85632 18.2006 7.71762 18.148 7.58813C18.0955 7.45865 18.0175 7.34102 17.9187 7.24222C17.8199 7.14341 17.7023 7.06544 17.5728 7.0129C17.4433 6.96037 17.3046 6.93436 17.1649 6.93639C17.0252 6.93843 16.8873 6.96848 16.7594 7.02476C16.6315 7.08105 16.5162 7.16242 16.4203 7.26406C16.2338 7.46174 16.1317 7.72431 16.1357 7.99604C16.1397 8.26776 16.2494 8.52725 16.4415 8.71941C16.6337 8.91157 16.8932 9.02127 17.1649 9.02523C17.4366 9.02919 17.6992 8.9271 17.8969 8.74063V8.74063Z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_292_2356-667389"
+                    x1="25"
+                    y1="-2.73437"
+                    x2="4.6875"
+                    y2="32.4219"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#5031D3" />
+                    <stop offset="0.39375" stop-color="#C0226C" />
+                    <stop offset="0.773958" stop-color="#EF562E" />
+                    <stop offset="1" stop-color="#F9D979" />
+                  </linearGradient>
+                </defs></svg
+              ><span>@amore_almty</span></a
+            >
+          </div>
+
+          <a
+            href="https://2gis.kz/almaty/geo/9430047375167552?m=76.838812%2C43.213339%2F16.86"
+            class="nav__link"
+            >📍
+            <span class="underline">Ул. Рабат 2А</span>
+          </a>
+
+          <a href="#" aria-label="mobile menu" id="mobile-menu">
+            <svg width="16" height="10" viewBox="0 0 16 10" class="burger-icon">
+              <title>Open mobile menu</title>
+              <g fill="#000" fill-rule="evenodd">
+                <rect y="8" width="16" height="2" rx="1"></rect>
+                <rect y="4" width="16" height="2" rx="1"></rect>
+                <rect width="16" height="2" rx="1"></rect>
+              </g>
+            </svg>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="https://www.instagram.com/stories/highlights/17977209406756589/"
+                class="nav__link"
+                >🤩 Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link">📃 Цены </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://www.instagram.com/stories/highlights/18165075691301674/"
+                class="nav__link"
+                >🍓 Выши заказы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero bg-animate">
+        <div class="container">
+          <div class="hero-container">
+            <img
+              src="assets/logotype.svg"
+              alt="Логотип Amore.kz"
+              class="logotype"
+            />
+
+            <div class="banner">
+              <h1>
+                Турецкая клубника, покрытая бельгийским шоколадом – вот что
+                настоящее удовольствие!
+              </h1>
+              <div class="banner-grid">
+                <div class="banner-item hidden">
+                  <span>🍬</span>
+                  <p>
+                    Этот вкусный и сладкий ягода станет идеальным дополнением к
+                    любому ужину, а также станет отличным подарком для близких.
+                  </p>
+                </div>
+                <div class="banner-item hidden">
+                  <span>😋</span>
+                  <p>
+                    Наслаждайтесь ей одиноко, а можете поделиться с друзьями и
+                    семьей – в любом случае, это будет незабываемое
+                    гастрономическое путешествие.
+                  </p>
+                </div>
+                <div class="banner-item hidden">
+                  <span>😻</span>
+                  <p>
+                    Бельгийский шоколад, с его тонким и роскошным вкусом,
+                    превращает турецкую клубнику в настоящее изысканное
+                    угощение.
+                  </p>
+                </div>
+                <div class="banner-item hidden">
+                  <span>💖</span>
+                  <p>
+                    Не упустите шанс попробовать эту восхитительную клубнику с
+                    бельгийским шоколадом!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="price">
+        <select id="filter">
+          <option value="byket">Букеты</option>
+          <option value="boxs">Боксы в коробке</option>
+          <option value="yagoda">Ягоды</option>
+          <option value="ofor">Оформление</option>
+        </select>
+        <section class="grid-cards items">
+          <!--! Букеты-->
+          <div class="item-card item byket">
+            <div class="figure">
+              <img src="assets/byketi/19.jpeg" alt="" class="item-img" />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">19 шт - <b>13350₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — +19+шт+-+13350+₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img src="assets/byketi/20.jpeg" alt="" class="item-img" />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">26 шт - <b>17900₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 26 шт - 17900 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img src="assets/byketi/30.jpeg" alt="" class="item-img" />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">30 шт - <b>20500₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 30 шт - 20500 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img src="assets/byketi/35.jpeg" alt="" class="item-img" />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">35 шт - <b>23750₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 35 шт - 23750 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">40 шт - <b>27000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 40 шт - 27000 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">60 шт - <b>40000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 60 шт - 40000 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">85 шт - <b>56250₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 85 шт - 56250 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item byket">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span id="basket-name">Букет</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">101 шт - <b>66650₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Букет+ — 101 шт- 66650 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <!--! Боксы в коробке-->
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">4 шт - <b>3600₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 4 шт - 3600 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">6 шт - <b>4900₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 6 шт - 4900 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img src="assets/boxs/9.jpeg" alt="" class="item-img" />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">9 шт - <b>6850₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 9 шт - 6850 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img src="assets/boxs/12.jpeg" alt="" class="item-img" />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">12 шт - <b>8800₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 12 шт - 8800 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img src="assets/boxs/16.jpeg" alt="" class="item-img" />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">16 шт - <b>11400₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 16 шт - 11400 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img src="assets/boxs/25.jpeg" alt="" class="item-img" />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">25 шт - <b>17250₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 25 шт - 17250 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">30 шт - <b>20500₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 30 шт - 20 500 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">40 шт - <b>27000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 40 шт - 27 000 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Боксы в коробке</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">35 шт - <b>23750₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 35 шт - 23 750 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item boxs">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>В коробке «Сердце»</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">30-35 шт - <b>23750₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Боксы в коробке+ — 30-35 шт в коробке «Сердце» - 23750 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <!--! Ягоды-->
+          <div class="item-card item yagoda">
+            <div class="figure">
+              <img src="assets/yagodi/5.jpeg" alt="" class="item-img" />
+              <span>Клубника в шоколаде</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">1 шт - <b>650₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Ягоды+ — Клубника в шоколаде 1 шт - 650 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item yagoda">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Клубника без шоколада</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">1 шт - <b>500₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Ягоды+ — Клубника без шоколада 1 шт - 500 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item yagoda">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Банан в шоколаде</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">Размер S - <b>300₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Ягоды+ — Банан в шоколаде S-300 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item yagoda">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Банан в шоколаде</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">Размер M - <b>600₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Ягоды+ — Банан в шоколаде M-600 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item yagoda">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Ягоды 1 порция</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">10-12 шт- <b>2000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+Ягоды+ — Ягоды 1 порция (10-12шт)  2000 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <!--! Оформление-->
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Медианы</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">1 шт - <b>250₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление + — Медианы 1 шт - 250 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img src="assets/Bykvi/bykvi.jpeg" alt="" class="item-img" />
+              <span>Шоколадная буква</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc">1 шт- <b>400₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление+ — Шоколадная буква 1 шт - 400 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Шоколад фигурка</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc"><b>от 100₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление+ — Шоколад фигурка от 100 ₸ и выше"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img
+                src="https://pbs.twimg.com/media/CxnVa7sW8AADdbl.jpg"
+                alt=""
+                class="item-img"
+              />
+              <span>Шоколадная плитка</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc"><b>2290₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление+ — Шоколадная плитка 2290 ₸"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img src="assets/ofor/1.jpeg" alt="" class="item-img" />
+              <span>На оформление в коробку</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc"><b>от 1000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление в коробку+ — от 1000 ₸ и выше"
+                >Заказать</a
+              >
+            </div>
+          </div>
+          <div class="item-card item ofor">
+            <div class="figure">
+              <img src="assets/ofor/2.jpeg" alt="" class="item-img" />
+              <span>Оформление в букете</span>
+            </div>
+            <div class="price">
+              <span id="basket-desc"><b>от 1000₸</b></span>
+              <a
+                href="https://api.whatsapp.com/send/?phone=77087568296&text=Здравствуйте!+Хочу+заказать+На оформление в букете + — от 1000 ₸ и выше "
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-present">
+          <div class="present-item">
+            <span>🍓</span>
+            <p>Отборная клубника из Турции</p>
+          </div>
+          <div class="present-item">
+            <span>🫶🏻</span>
+            <p>
+              С заботой о <br />
+              ваших чувствах
+            </p>
+          </div>
+          <div class="present-item">
+            <span>🍫</span>
+            <p>Натуральный бельгийский шоколад</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav">
+          <span>site.com 2022</span>
+
+          <a
+            href="https://2gis.kz/almaty/geo/9430047375167552?m=76.838812%2C43.213339%2F16.86"
+            class="nav__link"
+            >📍
+            <span class="underline">Ул. Рабат 2А</span>
+          </a>
+          <div class="nav__socials">
+            <a
+              href="https://www.instagram.com/amore_almty/"
+              class="social__link"
+              target="_blank"
+            >
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="25"
+                  height="25"
+                  rx="3.71875"
+                  fill="url(#paint0_linear_292_2356-667389)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.95703 3.95781C9.87344 3.91562 10.1656 3.90625 12.5 3.90625C14.8344 3.90625 15.1266 3.91641 16.0422 3.95781C16.9578 3.99922 17.5828 4.14531 18.1297 4.35703C18.7023 4.57344 19.2219 4.91172 19.6516 5.34922C20.0891 5.77812 20.4266 6.29688 20.6422 6.87031C20.8547 7.41719 21 8.04219 21.0422 8.95625C21.0844 9.87422 21.0938 10.1664 21.0938 12.5C21.0938 14.8344 21.0836 15.1266 21.0422 16.043C21.0008 16.957 20.8547 17.582 20.6422 18.1289C20.4266 18.7024 20.0885 19.222 19.6516 19.6516C19.2219 20.0891 18.7023 20.4266 18.1297 20.6422C17.5828 20.8547 16.9578 21 16.0437 21.0422C15.1266 21.0844 14.8344 21.0938 12.5 21.0938C10.1656 21.0938 9.87344 21.0836 8.95703 21.0422C8.04297 21.0008 7.41797 20.8547 6.87109 20.6422C6.29759 20.4265 5.77798 20.0885 5.34844 19.6516C4.91123 19.2224 4.5729 18.703 4.35703 18.1297C4.14531 17.5828 4 16.9578 3.95781 16.0437C3.91562 15.1258 3.90625 14.8336 3.90625 12.5C3.90625 10.1656 3.91641 9.87344 3.95781 8.95781C3.99922 8.04219 4.14531 7.41719 4.35703 6.87031C4.57322 6.29694 4.91181 5.77759 5.34922 5.34844C5.77816 4.91133 6.29724 4.573 6.87031 4.35703C7.41719 4.14531 8.04219 4 8.95625 3.95781H8.95703ZM15.9727 5.50469C15.0664 5.46328 14.7945 5.45469 12.5 5.45469C10.2055 5.45469 9.93359 5.46328 9.02734 5.50469C8.18906 5.54297 7.73438 5.68281 7.43125 5.80078C7.03047 5.95703 6.74375 6.14219 6.44297 6.44297C6.15785 6.72035 5.93842 7.05803 5.80078 7.43125C5.68281 7.73438 5.54297 8.18906 5.50469 9.02734C5.46328 9.93359 5.45469 10.2055 5.45469 12.5C5.45469 14.7945 5.46328 15.0664 5.50469 15.9727C5.54297 16.8109 5.68281 17.2656 5.80078 17.5688C5.93828 17.9414 6.15781 18.2797 6.44297 18.557C6.72031 18.8422 7.05859 19.0617 7.43125 19.1992C7.73438 19.3172 8.18906 19.457 9.02734 19.4953C9.93359 19.5367 10.2047 19.5453 12.5 19.5453C14.7953 19.5453 15.0664 19.5367 15.9727 19.4953C16.8109 19.457 17.2656 19.3172 17.5688 19.1992C17.9695 19.043 18.2563 18.8578 18.557 18.557C18.8422 18.2797 19.0617 17.9414 19.1992 17.5688C19.3172 17.2656 19.457 16.8109 19.4953 15.9727C19.5367 15.0664 19.5453 14.7945 19.5453 12.5C19.5453 10.2055 19.5367 9.93359 19.4953 9.02734C19.457 8.18906 19.3172 7.73438 19.1992 7.43125C19.043 7.03047 18.8578 6.74375 18.557 6.44297C18.2796 6.15787 17.942 5.93845 17.5688 5.80078C17.2656 5.68281 16.8109 5.54297 15.9727 5.50469V5.50469ZM11.4023 15.1492C12.0154 15.4044 12.698 15.4388 13.3335 15.2467C13.9691 15.0545 14.5183 14.6476 14.8872 14.0955C15.2561 13.5434 15.4219 12.8804 15.3563 12.2196C15.2907 11.5589 14.9977 10.9414 14.5273 10.4727C14.2275 10.173 13.865 9.9436 13.4659 9.8009C13.0668 9.65819 12.641 9.60575 12.2191 9.64736C11.7973 9.68896 11.39 9.82358 11.0264 10.0415C10.6629 10.2594 10.3521 10.5553 10.1166 10.9077C9.88114 11.2601 9.72671 11.6604 9.66447 12.0797C9.60222 12.4989 9.63371 12.9268 9.75667 13.3324C9.87963 13.7381 10.091 14.1114 10.3756 14.4256C10.6601 14.7397 11.0108 14.9869 11.4023 15.1492ZM9.37656 9.37656C9.78674 8.96639 10.2737 8.64102 10.8096 8.41903C11.3455 8.19705 11.9199 8.08279 12.5 8.08279C13.0801 8.08279 13.6545 8.19705 14.1904 8.41903C14.7263 8.64102 15.2133 8.96639 15.6234 9.37656C16.0336 9.78674 16.359 10.2737 16.581 10.8096C16.803 11.3455 16.9172 11.9199 16.9172 12.5C16.9172 13.0801 16.803 13.6545 16.581 14.1904C16.359 14.7263 16.0336 15.2133 15.6234 15.6234C14.7951 16.4518 13.6715 16.9172 12.5 16.9172C11.3285 16.9172 10.2049 16.4518 9.37656 15.6234C8.54818 14.7951 8.08279 13.6715 8.08279 12.5C8.08279 11.3285 8.54818 10.2049 9.37656 9.37656V9.37656ZM17.8969 8.74063C17.9985 8.64474 18.0799 8.52944 18.1362 8.40154C18.1925 8.27365 18.2225 8.13576 18.2245 7.99604C18.2266 7.85632 18.2006 7.71762 18.148 7.58813C18.0955 7.45865 18.0175 7.34102 17.9187 7.24222C17.8199 7.14341 17.7023 7.06544 17.5728 7.0129C17.4433 6.96037 17.3046 6.93436 17.1649 6.93639C17.0252 6.93843 16.8873 6.96848 16.7594 7.02476C16.6315 7.08105 16.5162 7.16242 16.4203 7.26406C16.2338 7.46174 16.1317 7.72431 16.1357 7.99604C16.1397 8.26776 16.2494 8.52725 16.4415 8.71941C16.6337 8.91157 16.8932 9.02127 17.1649 9.02523C17.4366 9.02919 17.6992 8.9271 17.8969 8.74063V8.74063Z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_292_2356-667389"
+                    x1="25"
+                    y1="-2.73437"
+                    x2="4.6875"
+                    y2="32.4219"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#5031D3" />
+                    <stop offset="0.39375" stop-color="#C0226C" />
+                    <stop offset="0.773958" stop-color="#EF562E" />
+                    <stop offset="1" stop-color="#F9D979" />
+                  </linearGradient>
+                </defs></svg
+              ><span>@amore_almty</span></a
+            >
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <script>
+      const menuButton = document.querySelector("#mobile-menu");
+      const menu = document.querySelector(".nav__list");
+      const burgerIcon = document.querySelector(".burger-icon");
+      const closeIcon = document.querySelector(".close-icon");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("menu-open");
+        menu.classList.toggle("menu-mobile-panel");
+      });
+    </script>
+  </body>
+</html>
+
